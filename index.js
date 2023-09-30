@@ -1,6 +1,10 @@
+import cors from "cors";
+
 const express = require('express');
 const app = express();
 const port = 3000;
+app.use(cors());
+
 
 // Endpoint to get the array of cities
 app.get('/cities', (req, res) => {
